@@ -21,5 +21,6 @@ let swiperCard = new Swiper(".tile-container", {
       1024: { slidesPerView: 6 },
       1280: { slidesPerView: 8 },
       1536: { slidesPerView: 8 },
+      1900; { slidesPerView: 10 },
     },
   });
