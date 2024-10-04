@@ -2,7 +2,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  vertical-align: middle;
+ /*  vertical-align: middle; - removed due to "Display:block" being present */
 }
 
 .swiper {
@@ -18,11 +18,11 @@ img {
   max-width: 200px;
 }
 
-/* WORKING ON THIS */
+
 
 /* Default heading styles for the card title */
 
-
+/* WORKING ON THIS - Container query for resizing text - flip */
 /* If the container is larger than 700px */
 @container (min-width: 20px) {
   .tile-game-title  {
@@ -51,22 +51,21 @@ img {
 
 .tile-shadow {
   position: absolute;
-  left: 0px;
-  bottom: 0px;
+  left: 0;
+  bottom: 0;
   width: auto;
   height: auto;
   z-index: 1;
-  border-radius:0px 0px 20px 20px;
+  border-radius:0 0 20px 20px;
   background-image: radial-gradient(118.34% 100% at 50.29% 100%, #000000 11.03%, rgba(0, 0, 0, 0) 100%);
-  position: absolute;
   background-size: cover;
   color: white;
 }
 
 .tile-frame {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   z-index: 2;
 }
 
