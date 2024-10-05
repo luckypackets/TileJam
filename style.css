@@ -28,10 +28,10 @@ img {
   margin-right: auto;
 }
 
-/* this was missing */
+
 .tile-wrapper {
   container-type: inline-size;
-  max-width: 200px;
+  
   
 }
 
@@ -40,23 +40,41 @@ img {
 /* Default heading styles for the card title */
 
 /* WORKING ON THIS - Container query for resizing text - flip */
-/* If the container is larger than 700px */
-@container (min-width: 20px) {
-  .tile-game-title  {
-    font-size: max 10em + 2cqi;
+/* Need to test using CQW to make the text resize auto rather than breakpoints. will be smoother. */
+@container (inline-size > 123px) {
+  .tile-wrapper .tile-game-title {
+    font-size: 16px;
+    bottom: 10px;
+    color : #e3ee00; /* YELLOW */
   }
-}
+} 
+@container (inline-size > 152px) {
+  .tile-wrapper .tile-game-title {
+    font-size: 18px;
+    bottom: 15px;
+    color : #00e3ee; /* BLUE */
+  }
+} 
+@container (inline-size > 173px) {
+  .tile-wrapper .tile-game-title {
+    font-size: 22px;
+    bottom: 20px;
+    color : #16fb47; /* GREEN */
+  }
+} 
 
 .tile-game-title {
+  /* NEED TO ALIGN TEXT DIV IN CENTRE SOMEHOW */
   width:100%;
-  max-width: 200px;
+  max-width: 95%;
   position: absolute;
   bottom: 26px;
   text-align: center;
   color : white;
   font-weight: semi-bold;
   z-index: 3;
-  font-size: 2em;
+  font-size: 22px;
+  
 }
 
 
