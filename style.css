@@ -10,7 +10,7 @@ img {
 }
 
 .container {
-  max-width: auto;
+  max-width: 1200px ;
   padding: 30px 24px;
   margin: 0 auto;
   background-color: purple;
