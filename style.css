@@ -10,7 +10,7 @@ img {
 }
 
 .container {
-  max-width: 1248px;
+  max-width: auto;
   padding: 30px 24px;
   margin: 0 auto;
   background-color: purple;
@@ -19,6 +19,7 @@ img {
 .tile-container, .navigation {
   margin-left: 0;
   margin-right: 0;
+ 
 }
 
 .swiper {
@@ -66,17 +67,16 @@ img {
 
 .tile-game-title {
   /* NEED TO ALIGN TEXT DIV IN CENTRE SOMEHOW */
-  display:flx;
   font-family: poppins;
   width:100%;
-  max-width: 100%;
+  max-width: 200px;
   position: absolute;
-  bottom: 1cqh;
+  bottom: 1.5cqh;
   text-align: center;
   color : white;
   font-weight: semi-bold;
   z-index: 3;
-  font-size: 15cqw;
+  font-size: 10cqw;
   
 }
 
@@ -84,13 +84,13 @@ img {
 .tile-bg {
   border-radius: 16px 16px 16px 16px; 
   overflow: hidden;
-  width: auto;
+  max-width: 200px;
 }
 
-.tile-shadow {
+/* .tile-shadow {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 150px;
+  bottom: 150px;
   width: auto;
   height: auto;
   z-index: 1;
@@ -99,7 +99,7 @@ img {
   background-size: cover;
   color: white;
 }
-
+*/
 .tile-frame {
   position: absolute;
   left: 0;
