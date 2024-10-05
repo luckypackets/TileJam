@@ -31,7 +31,8 @@ img {
 
 
 .tile-wrapper {
- container-type: inline-size;
+  container-type: inline-size;
+ 
 
   
   
@@ -65,8 +66,15 @@ img {
   }
 } */
 
+.sidebar {
+  
+ width:350px;
+  
+ background-color:blue;
+}
 .tile-game-title {
   /* NEED TO ALIGN TEXT DIV IN CENTRE SOMEHOW */
+  
   font-family: poppins;
   width:100%;
   max-width: 200px;
@@ -101,10 +109,12 @@ img {
 }
 */
 .tile-frame {
+  
   position: absolute;
   left: 0;
   top: 0;
   z-index: 2;
+  
 }
 
 
