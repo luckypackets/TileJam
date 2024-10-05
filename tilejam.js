@@ -15,6 +15,7 @@ let swiperCard = new Swiper(".tile-container", {
     },
   
     breakpoints: {
+      
       128: { slidesPerView: 2 },
       384: { slidesPerView: 3 },
       640: { slidesPerView: 4 },

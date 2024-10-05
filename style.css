@@ -30,7 +30,8 @@ img {
 
 
 .tile-wrapper {
-  container-type: inline-size;
+ container-type: inline-size;
+
   
   
 }
@@ -41,39 +42,41 @@ img {
 
 /* WORKING ON THIS - Container query for resizing text - flip */
 /* Need to test using CQW to make the text resize auto rather than breakpoints. will be smoother. */
-@container (inline-size > 123px) {
+ /*@container (inline-size > 123px) {
   .tile-wrapper .tile-game-title {
     font-size: 16px;
     bottom: 10px;
-    color : #e3ee00; /* YELLOW */
+    color : #e3ee00; 
   }
 } 
 @container (inline-size > 152px) {
   .tile-wrapper .tile-game-title {
     font-size: 18px;
     bottom: 15px;
-    color : #00e3ee; /* BLUE */
+    color : #00e3ee; 
   }
 } 
 @container (inline-size > 173px) {
   .tile-wrapper .tile-game-title {
     font-size: 22px;
     bottom: 20px;
-    color : #16fb47; /* GREEN */
+    color : #16fb47; 
   }
-} 
+} */
 
 .tile-game-title {
   /* NEED TO ALIGN TEXT DIV IN CENTRE SOMEHOW */
+  display:flx;
+  font-family: poppins;
   width:100%;
-  max-width: 95%;
+  max-width: 100%;
   position: absolute;
-  bottom: 26px;
+  bottom: 1cqh;
   text-align: center;
   color : white;
   font-weight: semi-bold;
   z-index: 3;
-  font-size: 22px;
+  font-size: 15cqw;
   
 }
 
@@ -103,9 +106,6 @@ img {
   top: 0;
   z-index: 2;
 }
-
-
-
 
 
 .navigation {
