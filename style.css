@@ -1,41 +1,33 @@
 body {
-  background-color: yellow;
+  background-color: black;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
   display: block;
-  /*  vertical-align: middle; - removed due to "Display:block" being present */
 }
 
-#main {
+#root {
+  display: block;
   margin-left: 240px;
-  background-color: purple;
 }
 
-/* 
+.root-container {
+  max-width: 1248px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 84px 24px 24px;
+}
 
-original tile container styles
-
-.main {
-  max-width: 1200px;
-  padding: 30px 24px;
-  margin: 0 auto;
-  background-color: purple;
-} */
-
-.tile-container,
-.navigation {
-  margin-left: 0;
-  margin-right: 0;
+.tile-button-container {
+  height: 32px;
+  margin-top: 24px;
+  margin-bottom: 6px;
 }
 
 .swiper {
   width: 100%;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .tile-wrapper {
@@ -108,12 +100,35 @@ original tile container styles
   z-index: 2;
 }
 
-.navigation {
+.tile-button {
   position: relative;
-  margin-top: 50px;
+
 }
 
 .header {
+  background-color: firebrick;
+  position: fixed;
+  height: 3.75rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 101;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar {
+  position: fixed;
+  width: 15rem;
+  left: 0;
+  top: 3.75rem;
+  bottom: 0;
+  z-index: 100;
+  transition: all 0.2s;
+  background-color: midnightblue;
+}
+
+/* .header {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -122,12 +137,12 @@ original tile container styles
   width: 100%;
   display: flex;
   align-items: center;
-}
+} */
 
-.sidebar {
+/* .sidebar {
   position: fixed;
   top: 60px;
   left: 0px;
   background-color: midnightblue;
   width: 15rem;
-}
+} */
