@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: yellow;
 }
 
 img {
@@ -17,12 +17,18 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 84px 24px 24px;
+  background-color:slategrey ;
 }
 
 .tile-button-container {
   height: 32px;
   margin-top: 24px;
   margin-bottom: 6px;
+  background-color: tomato;
+}
+
+.tile-container {
+  background-color: darkviolet;
 }
 
 .swiper {
