@@ -1,5 +1,4 @@
-$("input[type=submit]").click(function(){
-    var fontSize = $("input[type=number]").val();
+$("input[type=number]").change(function(){
+    var fontSize = $(this).val();
     $("span").css({"font-size":fontSize+"cqw"});
-}) ;
-
+});
