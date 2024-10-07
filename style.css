@@ -1,3 +1,8 @@
+@font-face {
+   font-family: poppins;
+   src: url(Poppins-SemiBold.woff);
+}
+
 body {
   background-color: yellow;
 }
@@ -74,9 +79,9 @@ img {
   bottom: 1.5cqh;
   text-align: center;
   color : white;
-  font-weight: semi-bold;
+  /* font-weight: semi-bold;*/
   z-index: 3;
-  font-size: 10cqw;
+  font-size: 12cqw;
   
 }
 
