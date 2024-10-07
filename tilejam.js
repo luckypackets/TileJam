@@ -1,3 +1,7 @@
+
+
+
+
 let swiperCard = new Swiper(".tile-container", {
     grid: {
       rows: 1,
